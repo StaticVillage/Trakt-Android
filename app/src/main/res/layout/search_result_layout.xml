@@ -18,7 +18,7 @@
                 android:id="@+id/edittext_query"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Query"/>
+                android:hint="Query" />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -30,91 +30,91 @@
             android:textSize="8dp" />
 
         <!--<FrameLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:padding="16dp">-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="16dp">-->
 
-            <!--<EditText-->
-                <!--android:id="@+id/filter_query"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:hint="Query"/>-->
-
-        <!--</FrameLayout>-->
-
-        <!--<FrameLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:padding="16dp">-->
-
-            <!--<EditText-->
-                <!--android:id="@+id/filter_years"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:hint="Year"/>-->
+        <!--<EditText-->
+        <!--android:id="@+id/filter_query"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="Query"/>-->
 
         <!--</FrameLayout>-->
 
         <!--<FrameLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:padding="16dp">-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="16dp">-->
 
-            <!--<EditText-->
-                <!--android:id="@+id/filter_genres"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:hint="Comma separated Genres (action,comedy)"/>-->
-
-        <!--</FrameLayout>-->
-
-        <!--<FrameLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:padding="16dp">-->
-
-            <!--<EditText-->
-                <!--android:id="@+id/filter_languages"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:hint="Comma separated languages (en,sp)"/>-->
+        <!--<EditText-->
+        <!--android:id="@+id/filter_years"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="Year"/>-->
 
         <!--</FrameLayout>-->
 
         <!--<FrameLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:padding="16dp">-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="16dp">-->
 
-            <!--<EditText-->
-                <!--android:id="@+id/filter_countries"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:hint="Comma separated countries (en,sp)"/>-->
+        <!--<EditText-->
+        <!--android:id="@+id/filter_genres"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="Comma separated Genres (action,comedy)"/>-->
+
+        <!--</FrameLayout>-->
+
+        <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="16dp">-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/filter_languages"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="Comma separated languages (en,sp)"/>-->
+
+        <!--</FrameLayout>-->
+
+        <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="16dp">-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/filter_countries"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="Comma separated countries (en,sp)"/>-->
 
         <!--</FrameLayout>-->
 
         <!--<LinearLayout-->
-            <!--android:orientation="horizontal"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:padding="16dp">-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="16dp">-->
 
-            <!--<EditText-->
-                <!--android:id="@+id/filter_runtime_min"-->
-                <!--android:layout_width="0dp"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_weight="1"-->
-                <!--android:hint="Min Runtime"-->
-                <!--android:inputType="number"/>-->
+        <!--<EditText-->
+        <!--android:id="@+id/filter_runtime_min"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:hint="Min Runtime"-->
+        <!--android:inputType="number"/>-->
 
-            <!--<EditText-->
-                <!--android:id="@+id/filter_runtime_max"-->
-                <!--android:layout_width="0dp"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_weight="1"-->
-                <!--android:hint="Max Runtime"-->
-                <!--android:inputType="number"/>-->
+        <!--<EditText-->
+        <!--android:id="@+id/filter_runtime_max"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:hint="Max Runtime"-->
+        <!--android:inputType="number"/>-->
 
         <!--</LinearLayout>-->
     </LinearLayout>
@@ -124,6 +124,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:visibility="gone"/>
+        android:visibility="gone" />
 
 </FrameLayout>
