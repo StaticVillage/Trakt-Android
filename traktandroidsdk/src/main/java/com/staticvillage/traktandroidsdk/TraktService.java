@@ -100,11 +100,13 @@ public class TraktService {
         gson = new Gson();
 
         OkHttpClient.Builder builder = new OkHttpClient.Builder();
-        //if (BuildConfig.DEBUG) {
+
+        if (BuildConfig.DEBUG) {
             HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor();
             loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
             builder.addInterceptor(loggingInterceptor);
-        //}
+        }
+
         builder.addInterceptor(interceptor)
                 .connectTimeout(10, TimeUnit.SECONDS)
                 .writeTimeout(10, TimeUnit.SECONDS)
@@ -125,10 +127,18 @@ public class TraktService {
                 .create(TraktApi.class);
     }
 
+    /**
+     * Set authentication token
+     * @param authToken authentication token
+     */
     public void setAuthToken(String authToken) {
         interceptor.setAuthToken(authToken);
     }
 
+    /**
+     * Get authentication token
+     * @return authentication token
+     */
     public String getAuthToken() {
         return interceptor.getAuthToken();
     }
@@ -136,9 +146,9 @@ public class TraktService {
     //<editor-fold desc="Authorization">
 
     /**
-     * Authorize app
+     * Authorize the user for the app
      *
-     * @param context
+     * @param context context
      */
     public void authorize(Context context) {
         Uri.Builder builder = new Uri.Builder()
@@ -200,9 +210,13 @@ public class TraktService {
     //<editor-fold desc="Calendar">
 
     /**
-     * @param startDate
-     * @param days
-     * @return
+     * Get users shows for date range
+     *
+     * (OAuth Required)
+     *
+     * @param startDate start date
+     * @param days day range from the start date to retrieve
+     * @return Shows in date range
      */
     public Observable<List<CalendarShow>> getMyShows(Date startDate,
                                                      int days,
@@ -213,9 +227,13 @@ public class TraktService {
     }
 
     /**
-     * @param startDate
-     * @param days
-     * @return
+     * Get users new shows for date range
+     *
+     * (OAuth Required)
+     *
+     * @param startDate start date
+     * @param days day range from the start date to retrieve
+     * @return New shows in date range
      */
     public Observable<List<CalendarShow>> getMyNewShows(Date startDate,
                                                         int days,
@@ -226,9 +244,13 @@ public class TraktService {
     }
 
     /**
-     * @param startDate
-     * @param days
-     * @return
+     * Get users new shows for date range
+     *
+     * (OAuth Required)
+     *
+     * @param startDate start date
+     * @param days day range from the start date to retrieve
+     * @return New season premieres in date range
      */
     public Observable<List<CalendarShow>> getMySeasonPremieres(Date startDate,
                                                                int days,
@@ -239,9 +261,13 @@ public class TraktService {
     }
 
     /**
-     * @param startDate
-     * @param days
-     * @return
+     * Get users new movies for date range
+     *
+     * (OAuth Required)
+     *
+     * @param startDate start date
+     * @param days day range from the start date to retrieve
+     * @return Movies in date range
      */
     public Observable<List<CalendarMovie>> getMyMovies(Date startDate,
                                                        int days,
@@ -252,9 +278,11 @@ public class TraktService {
     }
 
     /**
-     * @param startDate
-     * @param days
-     * @return
+     * Get shows for date range
+     *
+     * @param startDate start date
+     * @param days day range from the start date to retrieve
+     * @return Shows in date range
      */
     public Observable<List<CalendarShow>> getShows(Date startDate,
                                                    int days,
@@ -265,9 +293,11 @@ public class TraktService {
     }
 
     /**
-     * @param startDate
-     * @param days
-     * @return
+     * Get new shows for date range
+     *
+     * @param startDate start date
+     * @param days day range from the start date to retrieve
+     * @return New shows in date range
      */
     public Observable<List<CalendarShow>> getNewShows(Date startDate,
                                                       int days,
@@ -278,9 +308,11 @@ public class TraktService {
     }
 
     /**
-     * @param startDate
-     * @param days
-     * @return
+     * Get season premieres for date range
+     *
+     * @param startDate start date
+     * @param days day range from the start date to retrieve
+     * @return New shows in date range
      */
     public Observable<List<CalendarShow>> getSeasonPremieres(Date startDate,
                                                              int days,
@@ -291,9 +323,11 @@ public class TraktService {
     }
 
     /**
-     * @param startDate
-     * @param days
-     * @return
+     * Get movies for date range
+     *
+     * @param startDate start date
+     * @param days day range from the start date to retrieve
+     * @return Movies in date range
      */
     public Observable<List<CalendarMovie>> getMovies(Date startDate,
                                                      int days,
