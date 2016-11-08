@@ -32,10 +32,18 @@ public class TraktInterceptor implements Interceptor {
         this.authToken = authToken;
     }
 
+    /**
+     * get API token for the app
+     * @return API token
+     */
     public String getApiKey() {
         return apiKey;
     }
 
+    /**
+     * set API token for the app
+     * @param apiKey API token
+     */
     public void setApiKey(@NonNull String apiKey) {
         this.apiKey = apiKey;
     }
