@@ -1,0 +1,12 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+#key files
+app/src/main/res/values/trakt_keys.xml
