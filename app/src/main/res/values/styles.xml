@@ -14,4 +14,8 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="whiteButton" parent="Base.Widget.AppCompat.Button.Colored" >
+        <item name="background">@drawable/white_with_touch_state</item>
+    </style>
+
 </resources>

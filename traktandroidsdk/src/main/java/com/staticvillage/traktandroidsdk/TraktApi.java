@@ -1,5 +1,6 @@
 package com.staticvillage.traktandroidsdk;
 
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.staticvillage.traktandroidsdk.model.AccessToken;
 import com.staticvillage.traktandroidsdk.model.Alias;
@@ -254,9 +255,9 @@ public interface TraktApi {
     Observable<List<CollectionShow>> getMovieCollection(@QueryMap Map<String, String> params);
 
     @POST("sync/collection")
-    Observable<String> addToCollection(@Body RequestBody body);
+    Observable<JsonElement> addToCollection(@Body RequestBody body);
 
     @POST("sync/collection/remove")
-    Observable<String> removeFromCollection(@Body RequestBody body);
+    Observable<JsonElement> removeFromCollection(@Body RequestBody body);
     //</editor-fold>
 }
