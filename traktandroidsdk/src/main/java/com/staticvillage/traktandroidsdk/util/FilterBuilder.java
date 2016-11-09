@@ -3,16 +3,13 @@ package com.staticvillage.traktandroidsdk.util;
 import android.text.TextUtils;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
 import static com.staticvillage.traktandroidsdk.util.Constants.COUNTRIES;
-import static com.staticvillage.traktandroidsdk.util.Constants.EXTENDED;
 import static com.staticvillage.traktandroidsdk.util.Constants.GENRES;
 import static com.staticvillage.traktandroidsdk.util.Constants.LANGUAGES;
-import static com.staticvillage.traktandroidsdk.util.Constants.LIMIT;
-import static com.staticvillage.traktandroidsdk.util.Constants.PAGE;
-import static com.staticvillage.traktandroidsdk.util.Constants.PERIOD;
 import static com.staticvillage.traktandroidsdk.util.Constants.QUERY;
 import static com.staticvillage.traktandroidsdk.util.Constants.RATINGS;
 import static com.staticvillage.traktandroidsdk.util.Constants.RUNTIMES;
@@ -39,19 +36,19 @@ public class FilterBuilder {
         return this;
     }
 
-    public FilterBuilder setGenres(String... genres) {
+    public FilterBuilder setGenres(List<String> genres) {
         String genresStr = TextUtils.join(",", genres);
         map.put(GENRES, genresStr);
         return this;
     }
 
-    public FilterBuilder setLanguages(String... languages) {
+    public FilterBuilder setLanguages(List<String> languages) {
         String languagesStr = TextUtils.join(",", languages);
         map.put(LANGUAGES, languagesStr);
         return this;
     }
 
-    public FilterBuilder setCountries(String... countries) {
+    public FilterBuilder setCountries(List<String> countries) {
         String countriesStr = TextUtils.join(",", countries);
         map.put(COUNTRIES, countriesStr);
         return this;

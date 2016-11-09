@@ -18,6 +18,7 @@ public class TraktInterceptor implements Interceptor {
 
     /**
      * Get Oauth token
+     *
      * @return Oauth token
      */
     public String getAuthToken() {
@@ -26,6 +27,7 @@ public class TraktInterceptor implements Interceptor {
 
     /**
      * Set Oauth token
+     *
      * @param authToken
      */
     public void setAuthToken(String authToken) {
@@ -34,6 +36,7 @@ public class TraktInterceptor implements Interceptor {
 
     /**
      * get API token for the app
+     *
      * @return API token
      */
     public String getApiKey() {
@@ -42,6 +45,7 @@ public class TraktInterceptor implements Interceptor {
 
     /**
      * set API token for the app
+     *
      * @param apiKey API token
      */
     public void setApiKey(@NonNull String apiKey) {
