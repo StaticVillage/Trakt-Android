@@ -1,4 +1,4 @@
-package com.staticvillage.traktandroidsdk.model;
+package com.staticvillage.traktandroidsdk.model.auth;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

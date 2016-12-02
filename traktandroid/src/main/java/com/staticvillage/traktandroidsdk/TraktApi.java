@@ -2,7 +2,7 @@ package com.staticvillage.traktandroidsdk;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import com.staticvillage.traktandroidsdk.model.AccessToken;
+import com.staticvillage.traktandroidsdk.model.auth.AccessToken;
 import com.staticvillage.traktandroidsdk.model.Alias;
 import com.staticvillage.traktandroidsdk.model.AnticipatedMovie;
 import com.staticvillage.traktandroidsdk.model.AnticipatedShow;
@@ -145,6 +145,12 @@ public interface TraktApi {
     //<editor-fold desc="People">
     @GET("people/{id}")
     Observable<Person> getPerson(@Path("id") String id);
+
+    @GET("people/{id}/movies")
+    Observable<com.staticvillage.traktandroidsdk.model.movie.Crew> getMovieCredits(@Path("id") String id);
+
+    @GET("people/{id}/shows")
+    Observable<com.staticvillage.traktandroidsdk.model.show.Crew> getShowCredits(@Path("id") String id);
     //</editor-fold>
 
     //<editor-fold desc="Recommendations">

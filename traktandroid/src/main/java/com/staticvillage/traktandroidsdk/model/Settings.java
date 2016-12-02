@@ -2,6 +2,7 @@ package com.staticvillage.traktandroidsdk.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import com.staticvillage.traktandroidsdk.model.auth.Account;
 
 /**
  * Created by joelparrish on 10/24/16.

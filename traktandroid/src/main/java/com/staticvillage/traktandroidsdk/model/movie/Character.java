@@ -1,10 +1,12 @@
-package com.staticvillage.traktandroidsdk.model;
+package com.staticvillage.traktandroidsdk.model.movie;
+
+import com.staticvillage.traktandroidsdk.model.Movie;
 
 /**
  * Created by joelparrish on 12/1/16.
  */
 
-public class MovieCharacter {
+public class Character {
     private String character;
     private Movie movie;
 

@@ -8,7 +8,7 @@ import android.support.annotation.NonNull;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import com.staticvillage.traktandroidsdk.model.AccessToken;
+import com.staticvillage.traktandroidsdk.model.auth.AccessToken;
 import com.staticvillage.traktandroidsdk.model.Alias;
 import com.staticvillage.traktandroidsdk.model.AnticipatedMovie;
 import com.staticvillage.traktandroidsdk.model.AnticipatedShow;
