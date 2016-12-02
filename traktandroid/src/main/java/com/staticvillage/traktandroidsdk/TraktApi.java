@@ -17,6 +17,7 @@ import com.staticvillage.traktandroidsdk.model.Movie;
 import com.staticvillage.traktandroidsdk.model.MovieCount;
 import com.staticvillage.traktandroidsdk.model.MovieQueryResult;
 import com.staticvillage.traktandroidsdk.model.MovieUpdate;
+import com.staticvillage.traktandroidsdk.model.Person;
 import com.staticvillage.traktandroidsdk.model.Rating;
 import com.staticvillage.traktandroidsdk.model.Season;
 import com.staticvillage.traktandroidsdk.model.Show;
@@ -139,6 +140,11 @@ public interface TraktApi {
 
     @GET("movies/{id}/related")
     Observable<List<Movie>> getRelatedMovies(@Path("id") String id, @QueryMap Map<String, String> params);
+    //</editor-fold>
+
+    //<editor-fold desc="People">
+    @GET("people/{id}")
+    Observable<Person> getPerson(@Path("id") String id);
     //</editor-fold>
 
     //<editor-fold desc="Recommendations">
