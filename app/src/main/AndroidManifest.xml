@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.staticvillage.trakt_android_sdk">
+    package="com.staticvillage.trakt_android">
 
     <application
-        android:name=".App"
+        android:name="com.staticvillage.trakt_android.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".MainActivity">
+        <activity android:name="com.staticvillage.trakt_android.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -18,8 +18,8 @@
         </activity>
 
         <activity
-            android:name=".auth.AuthActivity"
-            android:parentActivityName=".MainActivity">
+            android:name="com.staticvillage.trakt_android.auth.AuthActivity"
+            android:parentActivityName="com.staticvillage.trakt_android.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -34,40 +34,40 @@
         </activity>
 
         <activity
-            android:name=".calendar.CalendarActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name="com.staticvillage.trakt_android.calendar.CalendarActivity"
+            android:parentActivityName="com.staticvillage.trakt_android.MainActivity" />
 
         <activity
-            android:name=".genre.GenreActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name="com.staticvillage.trakt_android.genre.GenreActivity"
+            android:parentActivityName="com.staticvillage.trakt_android.MainActivity" />
 
         <activity
-            android:name=".movie.MovieActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name="com.staticvillage.trakt_android.movie.MovieActivity"
+            android:parentActivityName="com.staticvillage.trakt_android.MainActivity" />
 
         <activity
-            android:name=".recommendation.RecommendationActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name="com.staticvillage.trakt_android.recommendation.RecommendationActivity"
+            android:parentActivityName="com.staticvillage.trakt_android.MainActivity" />
 
         <activity
-            android:name=".search.SearchActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name="com.staticvillage.trakt_android.search.SearchActivity"
+            android:parentActivityName="com.staticvillage.trakt_android.MainActivity" />
 
         <activity
-            android:name=".show.ShowActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name="com.staticvillage.trakt_android.show.ShowActivity"
+            android:parentActivityName="com.staticvillage.trakt_android.MainActivity" />
 
         <activity
-            android:name=".season.SeasonActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name="com.staticvillage.trakt_android.season.SeasonActivity"
+            android:parentActivityName="com.staticvillage.trakt_android.MainActivity" />
 
         <activity
-            android:name=".episode.EpisodeActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name="com.staticvillage.trakt_android.episode.EpisodeActivity"
+            android:parentActivityName="com.staticvillage.trakt_android.MainActivity" />
 
         <activity
-            android:name=".sync.SyncActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name="com.staticvillage.trakt_android.sync.SyncActivity"
+            android:parentActivityName="com.staticvillage.trakt_android.MainActivity" />
     </application>
 
 </manifest>

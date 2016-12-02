@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Trakt-Android-Sdk.iml" filepath="$PROJECT_DIR$/Trakt-Android-Sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Trakt-Android.iml" filepath="$PROJECT_DIR$/Trakt-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/traktandroidsdk/traktandroidsdk.iml" filepath="$PROJECT_DIR$/traktandroidsdk/traktandroidsdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/traktandroid/traktandroid.iml" filepath="$PROJECT_DIR$/traktandroid/traktandroid.iml" />
     </modules>
   </component>
 </project>
