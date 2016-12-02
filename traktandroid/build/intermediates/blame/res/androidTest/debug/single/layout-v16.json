@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/joelparrish/Downloads/projects/Trakt-Android-Sdk/traktandroidsdk/build/intermediates/res/merged/androidTest/debug/layout-v16/notification_template_custom_big.xml",
+        "source": "/Users/joelparrish/Downloads/projects/Trakt-Android-Sdk/traktandroidsdk/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout-v16/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/joelparrish/Downloads/projects/Trakt-Android-Sdk/traktandroid/build/intermediates/res/merged/androidTest/debug/layout-v16/notification_template_custom_big.xml",
+        "source": "/Users/joelparrish/Downloads/projects/Trakt-Android-Sdk/traktandroid/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout-v16/notification_template_custom_big.xml"
+    }
+]
