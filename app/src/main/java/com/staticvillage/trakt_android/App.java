@@ -3,7 +3,7 @@ package com.staticvillage.trakt_android;
 import android.app.Application;
 import android.preference.PreferenceManager;
 
-import com.staticvillage.traktandroidsdk.TraktService;
+import com.staticvillage.traktandroid.TraktService;
 
 import static com.staticvillage.trakt_android.Constants.PREF_AUTH_TOKEN;
 
