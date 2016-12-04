@@ -10,3 +10,4 @@
 
 #key files
 app/src/main/res/values/trakt_keys.xml
+/traktandroid/local.properties
