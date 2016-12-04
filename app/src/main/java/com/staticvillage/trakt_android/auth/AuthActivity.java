@@ -10,6 +10,8 @@ import android.widget.Toast;
 import com.staticvillage.trakt_android.App;
 import com.staticvillage.trakt_android.R;
 import com.staticvillage.trakt_android.util.StringUtil;
+import com.staticvillage.traktandroid.exception.AuthException;
+import com.staticvillage.traktandroid.util.TraktUtil;
 
 /**
  * Created by joelparrish on 11/4/16.
@@ -26,18 +28,19 @@ public class AuthActivity extends AppCompatActivity implements OnAuthorizationLi
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        Uri uri = getIntent().getData();
-        if (uri != null && uri.toString().startsWith(getString(R.string.redirect_uri))) {
-            String code = uri.getQueryParameter("code");
-            if (code != null) {
-                getSupportFragmentManager()
-                        .beginTransaction()
-                        .add(R.id.fragment_container, AuthFragment.newInstance(code))
-                        .commit();
-            } else if (uri.getQueryParameter("error") != null) {
-                String message = uri.getQueryParameter("error");
-                Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
-            }
+        String code = null;
+        try {
+            code = TraktUtil.getAuthCode(getIntent(), getString(R.string.redirect_uri));
+        } catch (AuthException e) {
+            e.printStackTrace();
+            Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+        }
+
+        if (code != null) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.fragment_container, AuthFragment.newInstance(code))
+                    .commit();
         } else if (StringUtil.isEmpty(App.getTraktService().getAuthToken())) {
             getSupportFragmentManager()
                     .beginTransaction()

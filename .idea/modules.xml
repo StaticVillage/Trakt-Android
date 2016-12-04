@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Trakt-Android.iml" filepath="$PROJECT_DIR$/Trakt-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/traktandroid/traktandroid.iml" filepath="$PROJECT_DIR$/traktandroid/traktandroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trakt-android/trakt-android.iml" filepath="$PROJECT_DIR$/trakt-android/trakt-android.iml" />
     </modules>
   </component>
 </project>

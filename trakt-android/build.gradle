@@ -27,8 +27,8 @@ android {
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 24
-        versionCode 2
-        versionName "0.0.2"
+        versionCode 3
+        versionName "0.0.3"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -77,13 +77,13 @@ ext {
 
     // Maven metadata
     publishedGroupId = 'com.staticvillage'
-    libraryName = 'TraktAndroid'
+    libraryName = 'Trakt-Android'
     // Save yourself a head ache, and set this equal to the name of the Android Studio library
     // module. The artifact name needs to match the name of the library.
     artifact = 'trakt-android'
 
     libraryDescription = 'Trakt library for Android'
-    libraryVersion = '0.0.2'
+    libraryVersion = '0.0.3'
 
     developerId = 'jpdev832'
     developerName = 'Joel Parrish'

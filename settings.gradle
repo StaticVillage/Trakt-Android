@@ -1,1 +1,1 @@
-include ':app', ':traktandroid'
+include ':app', ':trakt-android'
